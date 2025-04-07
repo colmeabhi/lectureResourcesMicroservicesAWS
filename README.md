@@ -32,20 +32,20 @@ Help students understand what microservices are, why they’re useful, and how t
 
 ## 🪜 PART 3: Step-by-Step Setup (Hands-on)
 
-### 🔹 Step 1: Create DynamoDB Tables
+### 🔹 Step 1: Create DynamoDB Tables - (Database)
 - **UserTable** → Partition Key: `userId` (String)  
 - **OrderTable** → Partition Key: `orderId` (String)
 
 ---
 
-### 🔹 Step 2: Create SNS Topic
+### 🔹 Step 2: Create SNS Topic - (Messenger)
 - Name: `OrderNotifications`
 - Create an **email subscription**
 - Confirm it via inbox (verify student email)
 
 ---
 
-### 🔹 Step 3: Create 2 Lambda Functions
+### 🔹 Step 3: Create 2 Lambda Functions - (This is like your local PC - hardware to run)
 
 - **`UserService` Lambda**:  
   - Python code available in `user_service_code.py`  
@@ -59,7 +59,7 @@ Help students understand what microservices are, why they’re useful, and how t
 
 ---
 
-### 🔹 Step 4: Set Up API Gateway (HTTP API)
+### 🔹 Step 4: Set Up API Gateway (HTTP API) - (This is like an express.js module)
 
 1. Create a new **HTTP API**
 2. Add 2 routes:
